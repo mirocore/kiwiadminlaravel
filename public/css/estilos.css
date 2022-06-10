@@ -1,0 +1,489 @@
+*:not(i){
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar{
+    background-color:#4F6622;
+}
+
+#mainCon{
+    padding:50px 0;
+}
+
+body{
+    background-color:#F0F1F4;
+}
+
+
+
+footer{
+    background-color: #103044;
+    color:white;
+}
+
+.sombra{
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
+textarea{
+    resize:none;
+}
+
+/*=========================================
+                SIDEBAR
+=========================================*/
+
+#sidebar-wrapper{
+    background-color: #4F6622 !important;
+    color:white;
+}
+
+
+.sidebar-heading{
+    background: url(../img/logo.png) no-repeat 10px center;
+    background-size:40px;
+    padding:20px 0 !important;
+    padding-left:60px !important;
+}
+
+#sidebar-wrapper .list-group-item{
+    background-color: #4F6622 !important;
+    color:white;
+    transition:.5s;
+}
+
+.list-group-item-action:hover{
+    padding-left:30px !important;
+    color:greenyellow!important;
+}
+
+#menu-toggle{
+    background-color: transparent !important;
+    color:#4F6622 !important;
+    border:0;
+    font-weight:bold !important;
+}
+
+
+/*=========================================
+                TABLAS
+=========================================*/
+::placeholder {
+  color: red;
+}    
+
+#tablita{
+        width:100% !important;
+    }
+
+.acciones button,
+.acciones a{
+    background-color:#4F6622;
+    color:white;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    display:inline-block !important;
+    border-radius:100% !important;
+    text-align:center;
+    transition:.5s;
+    margin:0 !important;
+}
+
+.acciones button:hover,
+.acciones a:hover{
+    transform:scale(.9) !important;
+    background-color:green;
+    color:white;
+}
+
+
+
+@media(min-width:500px){
+    #tablita{
+        background-color:white;
+        border:1px solid #dee2e6;
+    }
+    
+    #tablita thead tr{
+        background-color:#4F6622;
+        color:white;
+    }
+}
+
+@media(max-width:500px){
+    #tablita{
+        width:100%;
+        font-size: .9em;
+    }
+    
+    #tablita tr{
+        display:flex;
+        flex-direction: column;
+        padding:.5em;
+        margin:1em 0 !important;
+
+        background-color:white;
+        box-shadow:0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
+        text-align:center;
+    }
+    
+    #tablita thead{
+        display:none;
+    }
+    
+
+    
+    #tablita td[data-titulo]{
+        display:flex;
+        padding:.5em 0;
+    }
+    
+    #tablita td{
+        border:none;
+        display:block !important;
+    }
+    
+    #tablita td[data-titulo]::before{
+        content: attr(data-titulo);
+        font-weight:bold;
+        color:silver;
+        display:block !important;
+    }
+    
+    #tablita td.acciones {
+        display:flex!important;
+        justify-content: space-around
+    }
+}
+
+.myPagination li span,
+.myPagination li a{
+    border-radius:0 !important;
+    color:#4F6622;
+}
+
+
+.myPagination .active span{
+    background-color:#4F6622 !important;
+    color:white !important;
+}
+
+.dropdown-toggle::after{
+    display:none !important;
+}
+
+.nav-link .dropdown-toggle{
+}
+
+.dd{
+    margin:0 !important;
+    padding:0 !important;
+    transition:.5s;
+}
+
+.dd i{
+    padding:5px;
+    transition:.5s;
+    cursor:pointer
+}
+
+.dd i:hover{
+    background-color:steelblue;
+    color:white;
+}
+
+/*=========================================
+                INFO INDIVIDUAL
+=========================================*/
+
+.info-tit{
+    margin-bottom:25px;
+}
+
+.info-tit span{
+    color:silver;
+    width:2000px !important;
+    display:inline-block;
+}
+
+.info-tit  p{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/*=========================================
+                    ALERT
+=========================================*/
+
+.alert-ok{
+    background-color:forestgreen;
+    padding:1em;
+}
+
+.alert-ok p{
+    padding:1em;
+    background:url(../img/icon/icon-ok.png) no-repeat left center;
+    color:white;
+    background-size:50px;
+    padding-left:60px;
+    margin-bottom:0;
+}
+
+.alert-error{
+    background-color:darkred;
+    padding:1em;
+}
+
+.alert-error p{
+    padding:1em;
+    background:url(../img/icon/icon-error.png) no-repeat left center;
+    color:white;
+    background-size:50px;
+    padding-left:60px;
+    margin-bottom:0;
+}
+
+.alert-info{
+    background-color:steelblue;
+    padding:1em;
+}
+
+.alert-info p{
+    padding:1em;
+    background:url(../img/icon/icon-alert.png) no-repeat left center;
+    color:white;
+    background-size:50px;
+    padding-left:60px;
+    margin-bottom:0;
+}
+
+/*=========================================
+                FORMULARIO
+=========================================*/
+
+#btnNuevoPago,
+#btnNuevoCobro{
+    cursor:pointer;
+    transition:.5s;
+    background-color:white;
+    color:steelblue;
+    border:1px solid steelblue
+}
+
+#btnNuevoCobro:hover,
+#btnNuevoPago:hover{
+    background-color:steelblue;
+    color:white;
+}
+
+.cerrarPagoCobro{
+    position:absolute;
+    top:10px;
+    right:10px;
+    cursor:pointer;
+}
+
+.cobroIndividual,
+.pagoIndividual,
+#contenedorSubtrabajos .form-row{
+    position:relative;
+}
+
+.select2{
+    border-radius: 0 !important;
+}
+
+.btn-add{
+    color: #6c757d;
+    border-color:#6c757d;
+    transition:.5s;
+}
+
+.btn-add:hover{
+    background-color:#6c757d;
+    color:white;
+    cursor:pointer;
+}
+
+.pointer{cursor:pointer;}
+
+.btnCerrarSub{
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor:pointer;
+}
+
+
+/*=========================================
+                MODAL
+=========================================*/
+
+.myModal{}
+
+.myModal h1{
+    font-size:1.2rem !important;
+    font-weight:bold;
+    margin:0;
+}
+
+.myModal h2{
+    font-size:.9rem !important;
+    color:#7D7D7D;
+}
+
+.myModal h2 + p{
+    font-size:.8rem;
+}
+
+.myModal .modal-destacado{
+    background-color: #FAFBFC;
+    color: #50586F;
+    border:1px solid #E3E7EE;
+    padding:10px;
+}
+
+
+/*=========================================
+                COBROS Y PAGOS
+=========================================*/
+
+.pagoIndividual{
+    position:relative;
+}
+
+.btnEliminar{
+    position:absolute;
+    top: 15px;
+    right:15px;
+    cursor:pointer;
+}
+
+/*=========================================
+                TABLAS
+=========================================*/
+::placeholder {
+  color: red;
+}    
+
+.tablita{
+        width:100% !important;
+    }
+
+.acciones button,
+.acciones a{
+    background-color:#4F6622;
+    color:white;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    display:inline-block !important;
+    border-radius:100% !important;
+    text-align:center;
+    transition:.5s;
+    margin:0 !important;
+}
+
+.acciones button:hover,
+.acciones a:hover{
+    transform:scale(.9) !important;
+    background-color:green;
+    color:white;
+}
+
+
+
+@media(min-width:500px){
+    .tablita{
+        background-color:white;
+        border:1px solid #dee2e6;
+    }
+    
+    .tablita thead tr{
+        background-color:#4F6622;
+        color:white;
+    }
+}
+
+@media(max-width:500px){
+    .tablita{
+        width:100%;
+        font-size: .9em;
+    }
+    
+    .tablita tr{
+        display:flex;
+        flex-direction: column;
+        padding:.5em;
+        margin:1em 0 !important;
+
+        background-color:white;
+        box-shadow:0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;
+        text-align:center;
+    }
+    
+    .tablita thead{
+        display:none;
+    }
+    
+
+    
+    .tablita td[data-titulo]{
+        display:flex;
+        padding:.5em 0;
+    }
+    
+    .tablita td{
+        border:none;
+        display:block !important;
+    }
+    
+    .tablita td[data-titulo]::before{
+        content: attr(data-titulo);
+        font-weight:bold;
+        color:silver;
+        display:block !important;
+    }
+    
+    .tablita td.acciones {
+        display:flex!important;
+        justify-content: space-around
+    }
+}
+
+.myPagination li span,
+.myPagination li a{
+    border-radius:0 !important;
+    color:#4F6622;
+}
+
+
+.myPagination .active span{
+    background-color:#4F6622 !important;
+    color:white !important;
+}
+
+.dropdown-toggle::after{
+    display:none !important;
+}
+
+.nav-link .dropdown-toggle{
+}
+
+.dd{
+    margin:0 !important;
+    padding:0 !important;
+    transition:.5s;
+}
+
+.dd i{
+    padding:5px;
+    transition:.5s;
+    cursor:pointer
+}
+
+.dd i:hover{
+    background-color:steelblue;
+    color:white;
+}
